@@ -6,6 +6,7 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
+import Link from "next/link";
 import { LOGO_IMAGE } from "../../../utilities/constants/images";
 import NavbarButton from "../NavbarButton";
 
@@ -24,16 +25,30 @@ function NavbarDesktop() {
             <MenuIcon />
           </IconButton> */}
           <img src={LOGO_IMAGE} alt="logo" style={logoStyle} />
-          <Typography variant="h5" component="div" sx={logoTextStyle}>
+          <Typography variant="h4" component="div" sx={logoTextStyle}>
             RoboSTEM
           </Typography>
-          <NavbarButton>Home</NavbarButton>
-          <NavbarButton>About</NavbarButton>
-          <NavbarButton>Results</NavbarButton>
-          <NavbarButton>News</NavbarButton>
-          <NavbarButton>Links</NavbarButton>
-          <NavbarButton>Contact</NavbarButton>
-          <NavbarButton>Partners</NavbarButton>
+          <Link href="/">
+            <NavbarButton>Home</NavbarButton>
+          </Link>
+          <Link href="/about">
+            <NavbarButton>About</NavbarButton>
+          </Link>
+          <Link href="/results">
+            <NavbarButton>Results</NavbarButton>
+          </Link>
+          <Link href="/news">
+            <NavbarButton>News</NavbarButton>
+          </Link>
+          <Link href="/links">
+            <NavbarButton>Links</NavbarButton>
+          </Link>
+          <Link href="/contact">
+            <NavbarButton>Contact</NavbarButton>
+          </Link>
+          <Link href="/partners">
+            <NavbarButton>Partners</NavbarButton>
+          </Link>
         </Toolbar>
       </AppBar>
     </Box>

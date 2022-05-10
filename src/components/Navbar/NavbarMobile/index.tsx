@@ -19,7 +19,7 @@ function NavbarMobile() {
           </IconButton>
           <div style={logoContainer}>
             <img src={LOGO_IMAGE} alt="logo" style={logoStyle} />
-            <Typography variant="h5" component="div" sx={logoTextStyle}>
+            <Typography variant="h4" component="div" sx={logoTextStyle}>
               RoboSTEM
             </Typography>
           </div>
