@@ -16,6 +16,10 @@ const theme = createTheme({
     white: {
       main: "#fff",
     },
+    black: {
+      main: "#000",
+      contrastText: "#fff",
+    },
   },
   components: {
     MuiUseMediaQuery: {

@@ -13,7 +13,7 @@ function Footer() {
         ...{ textAlign: isMobile ? "justify" : "center" },
       }}
     >
-      <Container maxWidth="lg">
+      <Container maxWidth="md">
         <Typography variant="body2">
           This project has been funded with support from the European
           Commission. This webpage reflects the views only of the ROBOSTEM

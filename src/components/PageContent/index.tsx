@@ -1,4 +1,5 @@
 import { Container, Paper, Typography } from "@mui/material";
+import ContentDivider from "../ContentDivider";
 
 interface Props {
   children?: JSX.Element | JSX.Element[];
@@ -7,28 +8,23 @@ interface Props {
 
 function PageContent({ children, title }: Props) {
   return (
-    <Container maxWidth="lg">
-      <Paper elevation={5}>
+    <Container maxWidth="md">
+      <Paper elevation={5} style={paperStyle}>
         <Typography
-          style={titleStyle}
           variant="h2"
           align="center"
           fontFamily="Comfortaa"
         >
           {title}
         </Typography>
-        <div style={contentStyle}>{children}</div>
+        <ContentDivider />
+        {children}
       </Paper>
     </Container>
   );
 }
 
-const titleStyle = {
-  padding: "2rem 0",
-  margin: "0 2rem",
-  borderBottom: "2px solid black",
-};
-const contentStyle = {
+const paperStyle = {
   padding: "2rem 2rem",
 };
 

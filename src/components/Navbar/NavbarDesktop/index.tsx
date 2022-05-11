@@ -13,7 +13,7 @@ import NavbarButton from "../NavbarButton";
 function NavbarDesktop() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={appBarStyle}>
+      <AppBar position="static" sx={appBarStyle} color='black'>
         <Toolbar>
           {/* <IconButton
             size="large"
