@@ -1,5 +1,5 @@
 import Header from "../src/components/AboutPage/Header";
-import IOButton from "../src/components/AboutPage/IOButton";
+import IOButton from "../src/components/IOButton";
 import ContentDivider from "../src/components/ContentDivider";
 import Heading from "../src/components/Heading";
 import Layout from "../src/components/Layout";
@@ -12,7 +12,9 @@ function AboutNextPage() {
       <PageContent title="About">
         <Header />
         <ContentDivider />
-        <Heading align="left">Why RoboSTEM?</Heading>
+        <Heading variant="h4" align="left">
+          Why RoboSTEM?
+        </Heading>
         <ContentDivider />
         <SimpleText>
           &emsp;The analysis documents for the European educational policies
@@ -34,7 +36,9 @@ function AboutNextPage() {
           create the basis for the developmnet of basic skills and transversal
           skills required on the European Labor market for future jobs.
         </SimpleText>
-        <Heading align="left">Priorities and Topics</Heading>
+        <Heading variant="h4" align="left">
+          Priorities and Topics
+        </Heading>
         <ContentDivider />
         <SimpleText>
           &emsp;HORIZONTAL: Open education and innovative practices in a digital
@@ -46,7 +50,9 @@ function AboutNextPage() {
           &emsp;HORIZONTAL: Supporting individuals in acquiring and developing
           basic skills and key competences
         </SimpleText>
-        <Heading align="left">Topics addressed by the project</Heading>
+        <Heading variant="h4" align="left">
+          Topics addressed by the project
+        </Heading>
         <ContentDivider />
         <SimpleText>
           &emsp;Cooperation between educational institutions and business
@@ -56,7 +62,9 @@ function AboutNextPage() {
           &emsp;New innovative curricula/educational methods/development of
           training courses
         </SimpleText>
-        <Heading align="left">The objectives of the project</Heading>
+        <Heading variant="h4" align="left">
+          The objectives of the project
+        </Heading>
         <ContentDivider />
         <SimpleText>
           &emsp;1. Identifying means to project, program and use embedded
@@ -77,7 +85,9 @@ function AboutNextPage() {
           practices and innovative curricular resources between the institutions
           that target the development of STEM skills.
         </SimpleText>
-        <Heading align="left">Intellectual Outputs</Heading>
+        <Heading variant="h4" align="left">
+          Intellectual Outputs
+        </Heading>
         <ContentDivider />
         <SimpleText>
           {<IOButton number={1} />}
@@ -98,7 +108,9 @@ function AboutNextPage() {
           Toolkit with educational scenarios for the development of basic and
           transversal skills in VET institutes
         </SimpleText>
-        <Heading align="left">Aims and Target Groups</Heading>
+        <Heading variant="h4" align="left">
+          Aims and Target Groups
+        </Heading>
         <ContentDivider />
         <SimpleText>
           &emsp;Raising student motivation through through the application of

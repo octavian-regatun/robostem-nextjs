@@ -6,3 +6,5 @@
 - [ ] make navbar maxwidth lg
 - [ ] contact add icon instead of email
 - [ ] make reusable SimpleText component or Paragraph component
+- [ ] make navbar sticky
+- [ ] center footer image on desktop resize

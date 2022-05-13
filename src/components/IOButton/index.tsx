@@ -5,7 +5,7 @@ function IOButton({ number }: { number: number }) {
   return (
     <Link href={`io${number}`}>
       <Button variant="contained" color="black" sx={buttonStyle}>
-        IO{number}
+        Intellectual Output {number}
       </Button>
     </Link>
   );

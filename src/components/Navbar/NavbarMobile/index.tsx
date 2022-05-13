@@ -6,7 +6,7 @@ import { LOGO_IMAGE } from "../../../utilities/constants/images";
 function NavbarMobile() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={appBarStyle}>
+      <AppBar position="static" sx={appBarStyle} color="black">
         <Toolbar sx={toolbarStyle}>
           <IconButton
             size="large"
