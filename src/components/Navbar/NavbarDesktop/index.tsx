@@ -13,7 +13,7 @@ import NavbarButton from "../NavbarButton";
 function NavbarDesktop() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={appBarStyle} color='black'>
+      <AppBar position="static" sx={appBarStyle} color="black">
         <Toolbar>
           {/* <IconButton
             size="large"
@@ -29,25 +29,39 @@ function NavbarDesktop() {
             RoboSTEM
           </Typography>
           <Link href="/">
-            <NavbarButton>Home</NavbarButton>
+            <a>
+              <NavbarButton>Home</NavbarButton>
+            </a>
           </Link>
           <Link href="/about">
-            <NavbarButton>About</NavbarButton>
+            <a>
+              <NavbarButton>About</NavbarButton>
+            </a>
           </Link>
           <Link href="/results">
-            <NavbarButton>Results</NavbarButton>
+            <a>
+              <NavbarButton>Results</NavbarButton>
+            </a>
           </Link>
           <Link href="/news">
-            <NavbarButton>News</NavbarButton>
+            <a>
+              <NavbarButton>News</NavbarButton>
+            </a>
           </Link>
           <Link href="/links">
-            <NavbarButton>Links</NavbarButton>
+            <a>
+              <NavbarButton>Links</NavbarButton>
+            </a>
           </Link>
           <Link href="/contact">
-            <NavbarButton>Contact</NavbarButton>
+            <a>
+              <NavbarButton>Contact</NavbarButton>
+            </a>
           </Link>
           <Link href="/partners">
-            <NavbarButton>Partners</NavbarButton>
+            <a>
+              <NavbarButton>Partners</NavbarButton>
+            </a>
           </Link>
         </Toolbar>
       </AppBar>

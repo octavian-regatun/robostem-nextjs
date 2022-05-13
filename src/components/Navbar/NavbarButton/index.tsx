@@ -16,9 +16,7 @@ function NavbarButton(props: ButtonProps) {
 }
 
 const buttonStyle = {
-  "&:not(:last-child)": {
-    marginRight: "0.5rem",
-  },
+  marginRight: "0.5rem",
 };
 
 export default NavbarButton;
