@@ -18,7 +18,8 @@
     "@mui/material": "latest",
     "next": "latest",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-youtube": "^9.0.1"
   },
   "devDependencies": {
     "@types/node": "latest",
