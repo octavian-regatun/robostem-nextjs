@@ -3,7 +3,7 @@ import { Variant } from "@mui/material/styles/createTypography";
 import { CSSProperties } from "react";
 
 interface Props {
-  children: string;
+  children: any;
   align: "inherit" | "left" | "center" | "right" | "justify";
   variant: Variant;
   style?: CSSProperties;

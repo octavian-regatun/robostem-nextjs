@@ -19,11 +19,13 @@
     "next": "latest",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-pdf": "^5.7.2",
     "react-youtube": "^9.0.1"
   },
   "devDependencies": {
     "@types/node": "latest",
     "@types/react": "^18.0.0",
+    "@types/react-pdf": "^5.7.2",
     "eslint": "latest",
     "eslint-config-next": "latest",
     "typescript": "latest"
