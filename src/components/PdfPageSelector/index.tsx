@@ -15,8 +15,7 @@ function PdfPageSelector({
   setCurrentPage: setCurrentPage,
 }: Props) {
   function onClick(action: "increment" | "decrement") {
-    if (action === "increment")
-      if (currentPage + 1 <= totalPages) setCurrentPage(currentPage + 1);
+    if (currentPage + 1 <= totalPages) setCurrentPage(currentPage + 1);
 
     if (action === "decrement")
       if (currentPage - 1 >= 1) setCurrentPage(currentPage - 1);

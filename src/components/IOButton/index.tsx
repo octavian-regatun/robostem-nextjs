@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function IOButton({ number }: { number: number }) {
   return (
-    <Link href={`intelectual-output/${number}`}>
+    <Link href={`intellectual-outputs/${number}`}>
       <Button variant="contained" color="black" sx={buttonStyle}>
         Intellectual Output {number}
       </Button>

@@ -10,3 +10,5 @@
 - [ ] center footer image on desktop resize
 - [ ] fix video overflow when width around 320px
 - [ ] fix newsletter pdf on mobile
+- [ ] fix IOs pdfs on mobile
+- [ ] add spacing between document and page selector (IOs)

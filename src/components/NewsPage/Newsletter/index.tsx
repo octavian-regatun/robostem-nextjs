@@ -32,7 +32,6 @@ function Newsletter({ number, languages, defaultLanguage }: Props) {
             key={language}
             language={language}
             setLanguage={setLanguage}
-            src={getLanguageImage(language)}
             sx={buttonStyle}
           />
         ))}
