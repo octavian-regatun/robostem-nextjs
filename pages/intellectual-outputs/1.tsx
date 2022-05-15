@@ -6,7 +6,7 @@ import LanguageButton from "../../src/components/NewsPage/LanguageButton";
 import PdfPageSelector from "../../src/components/PdfPageSelector";
 import Language from "../../src/types/language";
 
-const Pdf = dynamic(() => import("../../src/components/PdfDocument"), {
+const PdfDocument = dynamic(() => import("../../src/components/PdfDocument"), {
   ssr: false,
 });
 
@@ -69,13 +69,13 @@ export default () => {
           <CaseStudiesTabs pdf={pdf} setPdf={setPdf} />
         )}
         <Paper style={paperStyle}>
-          <Pdf
+          <PdfDocument
             file={`/static/intellectual-outputs/1/${type}${
               type === "modules" ? `/${language}` : ""
             }/${pdf + 1}.pdf`}
             pageNumber={currentPage}
-            onLoadSuccess={({ numPages }: any) => setTotalPages(numPages)}
-          ></Pdf>
+            setTotalPages={setTotalPages}
+          ></PdfDocument>
           <PdfPageSelector
             currentPage={currentPage}
             totalPages={totalPages}

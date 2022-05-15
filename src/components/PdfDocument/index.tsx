@@ -2,16 +2,19 @@ import { Document, Page } from "react-pdf/dist/esm/entry.webpack5";
 
 interface Props {
   file: string;
-  onLoadSuccess?: any;
   pageNumber: number;
+  setTotalPages?: any;
 }
 
-function Pdf({ file, pageNumber, onLoadSuccess }: Props) {
+function PdfDocument({ file, pageNumber, setTotalPages }: Props) {
   return (
-    <Document file={file} onLoadSuccess={onLoadSuccess}>
+    <Document
+      file={file}
+      onLoadSuccess={({ numPages }) => setTotalPages(numPages)}
+    >
       <Page pageNumber={pageNumber} />
     </Document>
   );
 }
 
-export default Pdf;
+export default PdfDocument;

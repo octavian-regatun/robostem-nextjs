@@ -1,6 +1,6 @@
 enum Language {
   English = "en",
-  Romanian='ro',
+  Romanian = "ro",
   Greek = "gr",
   Portuguese = "pt",
   Croatian = "hr",

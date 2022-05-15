@@ -173,7 +173,7 @@ function Results() {
             school which is experienced in implementing learning activities
             adequate for student needs. All partners will collaborate in the
             elaboration of the curriculum as follows: - Liceul Teoretic de
-            Informatica "Grigore Moisil" and STROJARSKA TEHNICKA SKOLA FAUSTA
+            Informatica &quot;Grigore Moisil&quot; and STROJARSKA TEHNICKA SKOLA FAUSTA
             VRANCICA will organize analysis needs among students to identify the
             themes of interest and will suggest themes after careful study of
             the STEM programs in the two educational systems, the Croatian and
@@ -212,7 +212,7 @@ function Results() {
             questionnaires, student observation charts, project presentation
             charts, evaluation of practical tasks, etc); - examples of learning
             activities; to achieve applications with microcontrollers during cu
-            STEM study classes; - teacher's journal of ideas; - student practice
+            STEM study classes; - teacher&apos;s journal of ideas; - student practice
             journal. The guide will be a brochure both printed and posted online
             on the platform to assure the dissemination towards as many target
             groups as possible including the VET schools in rural areas that
