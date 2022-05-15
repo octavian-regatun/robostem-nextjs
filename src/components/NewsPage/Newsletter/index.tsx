@@ -39,7 +39,7 @@ function Newsletter({ number, languages, defaultLanguage }: Props) {
       </div>
       <div style={pdfContainerStyle}>
         <Document
-          file={`newsletters/${number}/${language}.pdf`}
+          file={`static/newsletters/${number}/${language}.pdf`}
           onLoadSuccess={onLoadSuccess}
         >
           <Page pageNumber={currentPage} height={600} />
