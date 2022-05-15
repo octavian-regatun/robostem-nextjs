@@ -9,7 +9,7 @@ const Pdf = dynamic(() => import("../../src/components/PdfDocument"), {
   ssr: false,
 });
 
-const languages: Language = [
+const languages: Language[] = [
   Language.English,
   Language.Greek,
   Language.Portuguese,
