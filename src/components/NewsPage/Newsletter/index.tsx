@@ -9,12 +9,13 @@ import PdfPageSelector from "../../PdfPageSelector";
 interface Props {
   number: number;
   languages: Language[];
+  defaultLanguage: Language;
 }
 
-function Newsletter({ number, languages }: Props) {
+function Newsletter({ number, languages, defaultLanguage }: Props) {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
-  const [language, setLanguage] = useState(Language.English);
+  const [language, setLanguage] = useState(defaultLanguage);
 
   function onLoadSuccess({ numPages }: { numPages: number }) {
     setTotalPages(numPages);
