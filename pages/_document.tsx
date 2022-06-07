@@ -30,6 +30,10 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
             rel="stylesheet"
           />
+          <meta
+            name="google-site-verification"
+            content="9DFNcZdMN8_VKIEGVoMyRCJskAFzkWutCWGWUNBfXig"
+          />
         </Head>
         <body>
           <Main />

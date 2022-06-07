@@ -1,5 +1,6 @@
 import { Container, Paper, Tab, Tabs } from "@mui/material";
 import dynamic from "next/dynamic";
+import Head from "next/head";
 import { CSSProperties, useState } from "react";
 import Layout from "../../src/components/Layout";
 import LanguageButton from "../../src/components/NewsPage/LanguageButton";
@@ -49,43 +50,48 @@ export default () => {
   const [language, setLanguage] = useState(Language.English);
 
   return (
-    <Layout>
-      <Container maxWidth="lg" style={containerStyle}>
-        <Tabs
-          orientation="vertical"
-          value={pdf}
-          onChange={(e, value) => {
-            setPdf(value);
-            setLanguage(Language.English);
-          }}
-        >
-          {tabs.map((tab, index) => (
-            <Tab key={tab} label={tab} value={index} />
-          ))}
-        </Tabs>
-        <Paper style={paperStyle}>
-          <div style={languagesContainerStyle}>
-            {languages[pdf].map((language, index) => (
-              <LanguageButton
-                key={`${language}-${index}`}
-                language={language}
-                setLanguage={setLanguage}
-              />
+    <>
+      <Head>
+        <title>RoboSTEM - Intellectual Output</title>
+      </Head>
+      <Layout>
+        <Container maxWidth="lg" style={containerStyle}>
+          <Tabs
+            orientation="vertical"
+            value={pdf}
+            onChange={(e, value) => {
+              setPdf(value);
+              setLanguage(Language.English);
+            }}
+          >
+            {tabs.map((tab, index) => (
+              <Tab key={tab} label={tab} value={index} />
             ))}
-          </div>
-          <PdfDocument
-            file={`/static/intellectual-outputs/2/${language}/${pdf + 1}.pdf`}
-            pageNumber={currentPage}
-            setTotalPages={setTotalPages}
-          />
-          <PdfPageSelector
-            currentPage={currentPage}
-            totalPages={totalPages}
-            setCurrentPage={setCurrentPage}
-          />
-        </Paper>
-      </Container>
-    </Layout>
+          </Tabs>
+          <Paper style={paperStyle}>
+            <div style={languagesContainerStyle}>
+              {languages[pdf].map((language, index) => (
+                <LanguageButton
+                  key={`${language}-${index}`}
+                  language={language}
+                  setLanguage={setLanguage}
+                />
+              ))}
+            </div>
+            <PdfDocument
+              file={`/static/intellectual-outputs/2/${language}/${pdf + 1}.pdf`}
+              pageNumber={currentPage}
+              setTotalPages={setTotalPages}
+            />
+            <PdfPageSelector
+              currentPage={currentPage}
+              totalPages={totalPages}
+              setCurrentPage={setCurrentPage}
+            />
+          </Paper>
+        </Container>
+      </Layout>
+    </>
   );
 };
 

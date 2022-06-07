@@ -1,5 +1,6 @@
 import { Container, Paper, Tab, Tabs } from "@mui/material";
 import dynamic from "next/dynamic";
+import Head from "next/head";
 import { CSSProperties, useState } from "react";
 import Layout from "../../src/components/Layout";
 import LanguageButton from "../../src/components/NewsPage/LanguageButton";
@@ -48,42 +49,47 @@ export default () => {
   const [totalPages, setTotalPages] = useState(1);
 
   return (
-    <Layout>
-      <div style={languagesContainer}>
-        {languages.map((language) => (
-          <LanguageButton
-            key={`language-${language}`}
-            language={language}
-            setLanguage={setLanguage}
-          />
-        ))}
-      </div>
-      <Tabs value={type} onChange={(e, value) => setType(value)} centered>
-        <Tab value="modules" label="Modules" />
-        <Tab value="case-studies" label="Case Studies" />
-      </Tabs>
-      <Container maxWidth="lg" style={containerStyle}>
-        {type === "modules" ? (
-          <ModulesTabs pdf={pdf} setPdf={setPdf} />
-        ) : (
-          <CaseStudiesTabs pdf={pdf} setPdf={setPdf} />
-        )}
-        <Paper style={paperStyle}>
-          <PdfDocument
-            file={`/static/intellectual-outputs/1/${type}${
-              type === "modules" ? `/${language}` : ""
-            }/${pdf + 1}.pdf`}
-            pageNumber={currentPage}
-            setTotalPages={setTotalPages}
-          ></PdfDocument>
-          <PdfPageSelector
-            currentPage={currentPage}
-            totalPages={totalPages}
-            setCurrentPage={setCurrentPage}
-          />
-        </Paper>
-      </Container>
-    </Layout>
+    <>
+      <Head>
+        <title>RoboSTEM - Intellectual Output</title>
+      </Head>
+      <Layout>
+        <div style={languagesContainer}>
+          {languages.map((language) => (
+            <LanguageButton
+              key={`language-${language}`}
+              language={language}
+              setLanguage={setLanguage}
+            />
+          ))}
+        </div>
+        <Tabs value={type} onChange={(e, value) => setType(value)} centered>
+          <Tab value="modules" label="Modules" />
+          <Tab value="case-studies" label="Case Studies" />
+        </Tabs>
+        <Container maxWidth="lg" style={containerStyle}>
+          {type === "modules" ? (
+            <ModulesTabs pdf={pdf} setPdf={setPdf} />
+          ) : (
+            <CaseStudiesTabs pdf={pdf} setPdf={setPdf} />
+          )}
+          <Paper style={paperStyle}>
+            <PdfDocument
+              file={`/static/intellectual-outputs/1/${type}${
+                type === "modules" ? `/${language}` : ""
+              }/${pdf + 1}.pdf`}
+              pageNumber={currentPage}
+              setTotalPages={setTotalPages}
+            ></PdfDocument>
+            <PdfPageSelector
+              currentPage={currentPage}
+              totalPages={totalPages}
+              setCurrentPage={setCurrentPage}
+            />
+          </Paper>
+        </Container>
+      </Layout>
+    </>
   );
 };
 

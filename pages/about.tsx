@@ -5,9 +5,14 @@ import Heading from "../src/components/Heading";
 import Layout from "../src/components/Layout";
 import PageContent from "../src/components/PageContent";
 import SimpleText from "../src/components/SimpleText";
+import Head from "next/head";
 
 function AboutNextPage() {
   return (
+    <>
+    <Head>
+      <title>RoboSTEM - About</title>
+    </Head>
     <Layout>
       <PageContent title="About">
         <Header />
@@ -141,6 +146,7 @@ function AboutNextPage() {
         </SimpleText>
       </PageContent>
     </Layout>
+    </>
   );
 }
 
