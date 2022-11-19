@@ -15,7 +15,20 @@ const newsletterLanguages = [
     Language.Romanian,
   ],
   [Language.Romanian, Language.English, Language.Portuguese, Language.Polish],
-  [Language.Romanian, Language.Polish, Language.Greek],
+  [
+    Language.Romanian,
+    Language.Polish,
+    Language.Greek,
+    Language.English,
+    Language.Croatian,
+  ],
+  [
+    Language.Greek,
+    Language.Croatian,
+    Language.Polish,
+    Language.Portuguese,
+    Language.Romanian,
+  ],
 ];
 
 const Newsletter = dynamic(
@@ -32,9 +45,15 @@ function NewsNextPage() {
       <Layout>
         <PageContent title="News">
           <Newsletter
-            number={1}
-            languages={newsletterLanguages[0]}
-            defaultLanguage={Language.English}
+            number={4}
+            languages={newsletterLanguages[3]}
+            defaultLanguage={Language.Romanian}
+          />
+          <ContentDivider />
+          <Newsletter
+            number={3}
+            languages={newsletterLanguages[2]}
+            defaultLanguage={Language.Romanian}
           />
           <ContentDivider />
           <Newsletter
@@ -44,9 +63,9 @@ function NewsNextPage() {
           />
           <ContentDivider />
           <Newsletter
-            number={3}
-            languages={newsletterLanguages[2]}
-            defaultLanguage={Language.Romanian}
+            number={1}
+            languages={newsletterLanguages[0]}
+            defaultLanguage={Language.English}
           />
         </PageContent>
       </Layout>

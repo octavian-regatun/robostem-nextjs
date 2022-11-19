@@ -11,11 +11,7 @@ import "../src/styles/global.css";
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
 
-interface MyAppProps extends AppProps {
-  emotionCache?: EmotionCache;
-}
-
-export default function MyApp(props: MyAppProps) {
+export default function MyApp(props: AppProps) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
   return (
     <CacheProvider value={emotionCache}>
