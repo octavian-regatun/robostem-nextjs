@@ -48,6 +48,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -55,6 +56,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -62,6 +64,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -69,6 +72,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -76,6 +80,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -83,6 +88,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -90,6 +96,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -97,6 +104,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -104,6 +112,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -111,6 +120,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -118,6 +128,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -125,6 +136,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -132,6 +144,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -139,6 +152,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -146,6 +160,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -153,6 +168,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -160,6 +176,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -167,6 +184,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -174,6 +192,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -181,6 +200,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -188,6 +208,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -195,6 +216,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -202,6 +224,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -209,6 +232,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -216,6 +240,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -223,6 +248,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -230,6 +256,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -237,6 +264,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -244,6 +272,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
   [
     Language.English,
@@ -251,6 +280,7 @@ const languages: Language[][] = [
     Language.Croatian,
     Language.Polish,
     Language.Portuguese,
+    Language.Romanian,
   ],
 ];
 
